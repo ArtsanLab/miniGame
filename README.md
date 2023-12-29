@@ -1,1 +1,1 @@
-I made this project in order to learning javascript 
+I made this project with the purpose of learning JavaScript.
