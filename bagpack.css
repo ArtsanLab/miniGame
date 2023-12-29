@@ -1,0 +1,84 @@
+.itemPool{
+
+    margin-top: 320px;
+    /* background-color: blue; */
+    text-align: center;
+}
+
+.bagPacks{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    min-width: 150px;
+}
+
+@media screen and (max-width: 680px) {
+    .bagPacks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2px;
+        justify-items: center;
+        align-items: center;
+        min-width: 150px;
+  }
+}
+
+
+.item_pack{
+    margin-top: 10px;
+    display: inline-block;
+    /* justify-content: center; */
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    padding: 0;
+    border: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    
+}
+
+.droppedItem{
+    width: 150px;
+    height: 40px;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.droppedeEachItem{
+    /* background-color: aquamarine; */
+    width: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.droppedeEachItem img{
+    width: 80%;
+    /* height: 30px; */
+    border-radius: 5px;
+}
+
+.dropCount{
+    position: absolute;
+    right: 8px;
+    bottom: -4px;
+    background: rgb(221, 125, 125);
+    color: white;
+    width: 14px;
+    height: 12px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+.graph{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 150px; 
+    border: 1px solid #929292;
+    background-color: transparent;
+    top: 60px;
+    /* right: 1px; */
+}
+
+.boxthought {
+    position: absolute;
+    top: 211px;
+
+    width: 95%;
+    display: block;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: #929292;
+    min-height: 15px;
+   
+    color: rgb(230, 176, 95);
+    text-align: start;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 2px;
+
+    /* text-wrap: wrap; */
+    font-size: 16px;
+    line-height: 1.3;
+
+}
+
+
+
+/* .MONSTER {
+    position: relative;
+    width: 80px;
+    height: 50px;
+    left: 1150px;
+    top: 120px
+} */

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+    <title>rock X paper X scissors Game</title>
+
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="bagpack.css">
+    <link rel="stylesheet" href="trackgraph.css">
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="pagelayout" onmousedown="return false;">
+        <div class="left-section">
+            <div class="options">
+                <div class="oneOption">
+                    <input type="checkbox" id="showProb">
+                    <label for="showProb">hint1 show probability</label>
+                </div>
+                <div class="oneOption">
+                    <input type="checkbox" id="showGuess">
+                    <label for="showGuess">hint2 show opponent's behavior in area</label>
+                </div>     
+            </div>
+            MOVE
+            <div id="MoveNum" class="moveNum">
+                10
+            </div>
+            <div class = "historyBOXES">
+                history
+            </div>
+            <div class="credit"></div>
+        </div>
+        
+        <div class="middle-section">
+            <div class="levelHead">
+                <div id="levelID" class="nameArea"> Level 1 </div>
+                <div id="levelInfo" class="LevInfo"></div>
+                <p> collect items dropped in 5 areas to win the game. </p>
+            </div>
+            <div class="droppedItem">
+                <div id='Drop0'class="droppedeEachItem">
+                    <img src="drop/Drop1.png">
+                    <div id='dropCount0' class="dropCount">0</div>
+                </div>
+                <div id='Drop1'class="droppedeEachItem">
+                    <img src="drop/Drop2.png">
+                    <div id='dropCount1' class="dropCount">0</div>
+
+                </div>
+                <div id='Drop2'class="droppedeEachItem">
+                    <img src="drop/Drop3.png">
+                    <div id='dropCount2' class="dropCount">0</div>
+
+                </div>
+                <div id='Drop3'class="droppedeEachItem">
+                    <img src="drop/Drop4.png">
+                    <div id='dropCount3' class="dropCount">0</div>
+
+                </div>
+                <div id='Drop4'class="droppedeEachItem">
+                    <img src="drop/Drop5.png">
+                    <div id='dropCount4' class="dropCount">0</div>
+
+                </div>
+            </div>
+            <div class="monitorMain">
+                <img id="mimg"  class="monitorMainImg" >
+                <div id='mainBox' class="monitorMainBox">
+                </div>
+            
+            </div>
+            <div class="items_display">
+                <button class='item_bot'>
+                    <img id='botHand0' src="item/bag1.jpg">
+                </button>
+
+                <button class='item_bot'>
+                    <img id='botHand1' src="item/bag1.jpg">
+                </button>
+
+                <button class='item_bot'>
+                    <img id='botHand2' src="item/bag1.jpg">
+                </button>
+            </div>
+
+        
+            <button class="orderMain" id="order" onclick="MainCommand()"> looking for items </button>
+            
+            <div class="items_display">
+                <button class='item_move' onclick="one_move(0);" disabled>
+                    <img id='userHand0'>
+                </button>
+
+                <button class='item_move' onclick="one_move(1);" disabled>
+                    <img id='userHand1'>
+                </button>
+
+                <button class='item_move' onclick="one_move(2);" disabled>
+                    <img id='userHand2'>
+                </button>
+            </div>
+            <div class="displayResult">
+                <div class= "scene">
+                    <div class="imageResult">
+                        <p> player </p>
+                        <img id="imgUser" >
+                    </div>
+                    <div class="imageResult">
+                        <p> computer </p>
+                        <img id="imgBot" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            JOURNEY
+            <canvas id="LevelTrack" class="graph">
+            </canvas>
+            <canvas id="bear" class="graph">
+            </canvas>
+            <!-- <div class ="graph">
+                <img id ="monster" class ="MONSTER"  alt = 'GIF Animetion'>
+            </div> -->
+            <div id="bearthought" class="boxthought">
+            </div>
+            <div class="itemPool">
+                ITEM POOL
+                <div class="bagPacks"  id="packs">
+                    <img id="pack0" class="item_pack" src="item/bag1.jpg">
+                    <img id="pack1" class="item_pack" src="item/bag1.jpg">
+                    <img id="pack2" class="item_pack" src="item/bag1.jpg">
+                    <img id="pack3" class="item_pack" src="item/bag1.jpg">
+                    <img id="pack4" class="item_pack" src="item/bag1.jpg">
+                    <img id="pack5" class="item_pack" src="item/bag1.jpg">
+                    <img id="pack6" class="item_pack" src="item/bag1.jpg">
+                    <img id="pack7" class="item_pack" src="item/bag1.jpg">
+                    <img id="pack8" class="item_pack" src="item/bag1.jpg">
+                    <img id="pack9" class="item_pack" src="item/bag1.jpg">
+                    <img id="pack10" class="item_pack" src="item/bag1.jpg">
+                    <img id="pack11" class="item_pack" src="item/bag1.jpg">
+
+
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+   
+    <canvas class="ending" id="END">
+
+    </canvas>
+    
+    <script src="Main.js"></script>
+    <script src="bagpack.js"></script>
+    <script src="level.js"></script>
+    <script src="graph.js"></script>
+    <script src="bot.js"></script>
+</body>
