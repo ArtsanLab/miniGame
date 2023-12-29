@@ -83,7 +83,7 @@ function reset(){
 
     document.getElementById('MoveNum').style.backgroundColor=`black`;
     welcomeLevel();
-    drawLevel();
+    
 
     document.getElementById('showGuess').checked = false;
     document.getElementById('showProb').checked = false;
@@ -110,17 +110,18 @@ function winLevel(){
     mainMassage.textContent = '----- YOU WON THE AREA -----';
     
     BagDropItem[LEVEL-1]++;
- 
+    
     NumWon++;
 
+    drawLevel();
     
-     if (BagDropItem.reduce((accum,x)=> {return accum&&x})){
+    if (BagDropItem.reduce((accum,x)=> {return accum&&x})){
         updateItemDrop();
         setTimeout(function(){mainMassage.textContent = 'you had collect all items'},1000);
         setTimeout(drawEND,2000);
        
      }
-     else{
+    else{
         for(i=0;i<3;i++){
             setTimeout(function(){mainMassage.textContent = `Going to the next Area in ${i} `;i--},(i+2)*1000);
         }
@@ -140,7 +141,8 @@ function loseLevel(){
     BagDropItem[Math.floor(5*Math.random())]&&BagDropItem[Math.floor(5*Math.random())]--;
 
     NumWon--;
-
+    
+    drawLevel();
 
     for(i=0;i<3;i++){
         setTimeout(function(){mainMassage.textContent = `Going to the next Area in ${i} `;i--},(i+2)*1000);
