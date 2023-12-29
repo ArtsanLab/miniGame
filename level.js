@@ -116,9 +116,9 @@ function winLevel(){
     
      if (BagDropItem.reduce((accum,x)=> {return accum&&x})){
         updateItemDrop();
-        setTimeout(function(){mainMassage.textContent = 'you had collect all items'},3000);
-        setTimeout()
-        drawEND();
+        setTimeout(function(){mainMassage.textContent = 'you had collect all items'},1000);
+        setTimeout(drawEND,2000);
+       
      }
      else{
         for(i=0;i<3;i++){

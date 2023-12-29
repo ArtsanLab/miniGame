@@ -125,7 +125,7 @@ function isWinTheGame(){
 }
 
 function islosetheGame(){
-    return 2*moveNum < numBlock-point
+    return 3*moveNum < numBlock-point
 }
 
 

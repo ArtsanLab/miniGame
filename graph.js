@@ -26,7 +26,7 @@ function drawLevel(){
   let W=canvas.width;
   let H=canvas.height;
   
-  let cy1= -0.4*W;
+  let cy1= -0.3*W;
   let cy2= 100;
   let cx1= 0.5*W;
   let cx2= 0;
