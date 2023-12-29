@@ -8,7 +8,7 @@ let BagDropItem=[0,0,0,0,0];
 
 NAMEAREA=['Enchanto Hopwizard','Rabbito Pinkpuff','Fleeceleto Cupcake', 'Wizkito Ann', 'Blondara Hornara']
 
-document.addEventListener('DOMContentLoaded', function(){updateLevel();imgLevelChange();});
+document.addEventListener('DOMContentLoaded', function(){updateLevel();imgLevelChange();drawLevel();});
 
 
 function LevelChange(){
