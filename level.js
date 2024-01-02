@@ -85,7 +85,7 @@ function reset(){
     welcomeLevel();
     
 
-    document.getElementById('showGuess').checked = false;
+    document.getElementById('showGuess').checked = true;
     document.getElementById('showProb').checked = false;
     document.getElementById("bearthought").innerText='';
 
