@@ -6,7 +6,7 @@ const bot0Perfer= shuffleArray(lineElement(3));
 const bot1Perfer= shuffleArray(lineElement(3));
 const BOTBEHAVE=['The opponet have perference items to pick','The opponet have perference items to pick',
 `The opponet pick items randomly`, 
-'The opponet know Math and always pick the highest possibility to won', 'The opponet is know Math but not always pick the highest possibility to won'];
+'The opponet always pick the highest possibility to won', 'The opponent often picks the item with the highest likelihood of winning'];
 
 
 
