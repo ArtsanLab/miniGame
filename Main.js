@@ -2,8 +2,8 @@
 
 const item=['rock','paper','scissors']
 const imgURL=['item/rock.jpg','item/paper1.jpg','item/scissor.jpg','item/bag1.jpg']
-const commandMassage=['start the round',
-'Remember all possibility of item in item pool','Choose your MOVE']
+const commandMassage=['click here to start the round',
+'Remember all possibility of item in item pool','Pick your MOVE']
 let bot, user, result;
 let STATE=0;
 let point = 0;
