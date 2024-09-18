@@ -266,4 +266,4 @@ function addhistoryDiv(colorBox) {
     newDiv.style.opacity=0.8;
   }
 
-document.getElementsByClassName('credit')[0].textContent= `1st JavaScript minigame project by Atoro, all artworks are designed by DALL\u00B7E 3`
+document.getElementsByClassName('credit')[0].textContent= `1st JavaScript minigame project by Atoro`
